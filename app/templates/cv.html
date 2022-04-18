@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="form">
+    <h1>Отправьте свое резюме:</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    
+        {{ form.as_p }}
+
+        <button type="submit">Add</button>
+    </form>
+</div>
+{% endblock content %}
