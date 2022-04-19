@@ -16,8 +16,6 @@ def news(request):
     posts = Post.objects.all()
     return render(request, 'news.html', {'posts':posts})
 
-def cv(request):
-    return render(request, 'cv.html',)
 
 
 def add_cv(request):
